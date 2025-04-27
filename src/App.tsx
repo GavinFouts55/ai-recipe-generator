@@ -1,3 +1,4 @@
+// your imports stay the same
 import { FormEvent, useState } from "react";
 import { Loader, Placeholder } from "@aws-amplify/ui-react";
 import "./App.css";
@@ -5,7 +6,6 @@ import { Amplify } from "aws-amplify";
 import { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import outputs from "../amplify_outputs.json";
-
 
 import "@aws-amplify/ui-react/styles.css";
 
@@ -35,8 +35,6 @@ function App() {
       } else {
         console.log(errors);
       }
-
-  
     } catch (e) {
       alert(`An error occurred: ${e}`);
     } finally {
@@ -58,6 +56,13 @@ function App() {
           demand...
         </p>
       </div>
+
+      {}
+      <div style={{ textAlign: "center", marginTop: "10px" }}>
+        <b>Created by Gavin Fouts</b>
+      </div>
+      {}
+
       <form onSubmit={onSubmit} className="form-container">
         <div className="search-container">
           <input
@@ -72,6 +77,7 @@ function App() {
           </button>
         </div>
       </form>
+
       <div className="result-container">
         {loading ? (
           <div className="loader-container">
