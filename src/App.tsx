@@ -1,4 +1,3 @@
-// your imports stay the same
 import { FormEvent, useState } from "react";
 import { Loader, Placeholder } from "@aws-amplify/ui-react";
 import "./App.css";
@@ -56,12 +55,6 @@ function App() {
           demand...
         </p>
       </div>
-      <div style={{ textAlign: "center", marginTop: "10px" }}>
-        <b>Created by Gavin Fouts</b>
-      </div>
-      {}
-
-      {}
 
       <form onSubmit={onSubmit} className="form-container">
         <div className="search-container">
@@ -90,6 +83,11 @@ function App() {
         ) : (
           result && <p className="result">{result}</p>
         )}
+      </div>
+
+      {/* 🔥 Your name at the bottom */}
+      <div style={{ textAlign: "center", marginTop: "40px" }}>
+        <b>Created by Gavin Fouts</b>
       </div>
     </div>
   );
