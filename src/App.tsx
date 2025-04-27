@@ -56,11 +56,11 @@ function App() {
           demand...
         </p>
       </div>
-
-      {}
       <div style={{ textAlign: "center", marginTop: "10px" }}>
         <b>Created by Gavin Fouts</b>
       </div>
+      {}
+
       {}
 
       <form onSubmit={onSubmit} className="form-container">
