@@ -86,7 +86,7 @@ function App() {
       </div>
 
       {/* 🔥 Your name at the bottom */}
-      <div style={{ textAlign: "center", marginTop: "40px" }}>
+      <div style={{ textAlign: "center", marginTop: "40px", color: "darkred" }}>
         <b>Created by Gavin Fouts</b>
       </div>
     </div>
